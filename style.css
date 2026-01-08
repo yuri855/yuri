@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #572727;
+    color: #ad8c8c;
+}
+
+header {
+    background-color: #6b6e70;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+header {
+    display: flex;
+    align-items: center;        /* vertically center image + text */
+    justify-content: flex-start; /* align to center */
+    gap: 20px;                  /* space between image and text */
+    padding: 40px;
+    text-align: left;
+}
+
+/* Make the profile image smaller by default */
+.profile-img {
+    width: 150px;   /* adjust as needed */
+    height: 150px;  /* keep square */
+    border-radius: 50%; /* optional: make it circular */
+    object-fit: cover;  /* ensures image stays proportional */
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* stack image and text */
+        text-align: center;
+        gap: 15px;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px; /* keep square on mobile */
+    }
+}
+
+
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.project {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #2c3e50;
+    color: white;
+}
